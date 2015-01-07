@@ -74,6 +74,6 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+  #config.active_record.dump_schema_after_migration = false
   THEMOVIEDB_KEY = "833d95a2cf8496b48ee4cde5af278aa9"
 end
