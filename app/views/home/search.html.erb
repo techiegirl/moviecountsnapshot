@@ -1,0 +1,120 @@
+
+
+<div class="container">
+
+  <!-- Top bar start -->
+  <div class="top-bar">
+
+    <div class="logo" style="font-size: 11px;
+            padding: 23px;">
+      <img style="width: 60px;" src="/img/lion.jpg"/>
+    </div>
+
+    <!-- Search bar start -->
+    <%= form_tag :controller => 'home', :action => "search", :id => "search" do %>
+        <div class="custom-search hidden-xs">
+          <input name='search' type="text" class="search-query" placeholder="Search By UUID">
+          <i class="icon-search"></i>
+        </div>
+    <% end %>
+
+    <!-- Search bar end -->
+
+  </div>
+  <!-- Top bar end -->
+
+  <!-- Header start -->
+  <header class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">&nbsp;</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/">Snapshot</a>
+        </li class="active">
+        <li>
+          <a href="/images">Repo Assets</a>
+        </li>
+      </ul>
+
+      <!-- Mini navigation start -->
+      <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Admin <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My Account</a></li>
+            <li class="divider"></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Mini navigation end -->
+    </nav>
+  </header>
+  <!-- Header end -->
+
+  <!-- Page title Start -->
+  <div class="page-title">
+
+    <div class="row ">
+
+      <div class="col-md-6 col-sm-6 col-xs-6">
+        <h2>NYPL Repo Dashboard</h2>
+        <ul class="breadcrumb">
+          <li></li>
+          <li>Snapshot of Repo Assets</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-sm-6 col-xs-6">
+
+      </div>
+    </div>
+  </div>
+  <!-- Page title end -->
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-sx-12">
+      <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+          <i class="icon-bar-chart"></i>
+          <h3 class="panel-title">Status Of UUID:  <%= @uuid %></h3>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-condensed table-striped table-bordered table-hover no-margin">
+              <thead>
+              <tr>
+                <th style="width:10%" class="hidden-phone">MMS</th>
+                <th style="width:10%" class="hidden-phone">Fedora</th>
+                <th style="width:15%" class="hidden-phone">Repo API</th>
+                <th style="width:15%" class="hidden-phone">Digital Collection</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="hidden-phone"><%= raw @mms_result %></td>
+                <td class="hidden-phone"><%= raw @fedora_result %></td>
+                <td class="hidden-phone"><%= raw @api_result %></td>
+                <td class="hidden-phone"><%= raw @dc_result %></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
