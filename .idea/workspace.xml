@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="52" selection-start="1336" selection-end="1368" vertical-scroll-proportion="0.0">
+            <state line="18" column="42" selection-start="736" selection-end="736" vertical-scroll-proportion="0.36241612">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="30" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.33240613">
+            <state line="22" column="35" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-5.1538463">
               <folding />
             </state>
           </provider>
@@ -747,16 +747,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="52" selection-start="1336" selection-end="1368" vertical-scroll-proportion="0.0">
+        <state line="22" column="35" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-5.1538463">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="30" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.33240613">
+        <state line="18" column="42" selection-start="736" selection-end="736" vertical-scroll-proportion="0.36241612">
           <folding />
         </state>
       </provider>
