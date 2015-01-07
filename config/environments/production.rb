@@ -75,5 +75,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   #config.active_record.dump_schema_after_migration = false
-  THEMOVIEDB_KEY = "*****"
+  THEMOVIEDB_KEY = "833d95a2cf8496b48ee4cde5af278aa9"
 end
