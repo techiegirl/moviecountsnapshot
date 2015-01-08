@@ -31,7 +31,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  THEMOVIEDB_KEY = "*****"
+  THEMOVIEDB_KEY = "833d95a2cf8496b48ee4cde5af278aa9"
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end

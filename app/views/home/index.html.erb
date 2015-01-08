@@ -1,62 +1,3 @@
-<div class="container">
-<!-- Top bar start -->
-<div class="top-bar">
-  <div class="logo" style="font-size: 11px;padding: 23px;">
-    <img style="width: 60px;" src="/assets/movie.png"/>
-    
-    <!--<sup><i class="icon-cloud"></i></sup>-->
-  </div>
-
-  <!-- Search bar start -->
-  <%= form_tag :controller => 'home', :action => "index", :id => "search" do %>
-      <div class="custom-search hidden-xs">
-        <input name='search' type="text" class="search-query" placeholder="Search By Movie Name">
-        <i class="icon-search"></i>
-      </div>
-  <% end %>
-
-  <!-- Search bar end -->
-</div>
-<!-- Top bar end -->
-
-<!-- Header start -->
-<header class="navbar" role="navigation">
-  <div class="navbar-header">
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a href="#" class="navbar-brand">&nbsp;</a>
-  </div>
-  <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/">Snapshot</a>
-      </li>
-      <!--<li>-->
-        <!--<a href="/images">Movie Details</a>-->
-      <!--</li>-->
-    </ul>
-
-    <!-- Mini navigation start -->
-    <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i> Admin <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">My Account</a></li>
-          <li class="divider"></li>
-          <li><a href="login.html">Logout</a></li>
-        </ul>
-      </li>
-    </ul>
-    <!-- Mini navigation end -->
-  </nav>
-</header>
-<!-- Header end -->
-
 <!-- Page title Start -->
 <div class="page-title">
 
@@ -476,5 +417,5 @@
     <!--</div>-->
   <!--</div>-->
 </div>
-</div>
+
 

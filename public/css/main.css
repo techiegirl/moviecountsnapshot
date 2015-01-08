@@ -1798,3 +1798,11 @@ ul.roman-list {
 @media (max-width: 768px) {
   .gallery .visual {
     margin-bottom: 10px; } }
+
+.tmdb_movie img{
+    height: 200px;
+    width: 150px;
+}
+.tmdb_movie h2, h3{
+    color: lightslategrey;
+}

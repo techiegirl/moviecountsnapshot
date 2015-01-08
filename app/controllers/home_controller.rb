@@ -32,7 +32,8 @@ class HomeController < ApplicationController
   end
 
   def search
-    @uuid = params[:search]
+    @search_param =  params[:search]
+    @movie = Tmdb::Movie.find(@search_param)
   end
 
   def get_total_movies_count
