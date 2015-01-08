@@ -1,0 +1,100 @@
+<!-- Page title Start -->
+<div class="page-title">
+
+  <div class="row ">
+
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <h2>Movie Deatils</h2>
+      <ul class="breadcrumb">
+        <li></li>
+        <li>(Powerd By <a href="http://www.themoviedb.com">TheMovieDB</a> API)</li>
+      </ul>
+    </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-6">
+
+    </div>
+  </div>
+</div>
+<!-- Page title end -->
+
+<div class="row">
+  <div class="col-md-12 col-sm-12 col-sx-12">
+    <div class="panel panel-default">
+      <div class="panel-heading clearfix">
+        <i class="icon-bar-chart"></i>
+        <h3 class="panel-title">Movie Details</h3>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="tmdb_movie table table-condensed table-striped table-bordered table-hover no-margin">
+            <thead>
+              <tr>
+                <td>
+                    <h2><%= @movie_details.title %></h2>
+                </td>
+                <td>
+                    <div id="star" data-score="<%= @movie_details.vote_average %>"></div> <%= @movie_details.vote_average %> from <%= @movie_details.vote_count %> voters.
+                </td>
+              </tr>
+                <tr>
+                <td>
+                <h3>Overview</h3>
+                </td>
+                <td>
+                <%= @movie_details.overview %>
+                </td>
+                </tr>
+                <tr><td>
+
+                  <h3>Tagline</h3>
+                  </td>
+                  <td>
+                      <%= @movie_details.tagline %>
+                  </td>
+                  </tr>
+                <tr>
+              <td>
+                <h3>Genres</h3>
+                </td><td>
+                <% @movie_details.genres.each do |genre| %>
+                <%= genre['name'] %>
+                <% end %>
+                  </td></tr>
+            <tr><td>
+                <h3>Casts</h3>
+              </td>
+              <td>
+                <table class="table table-bordered table-striped table-hover">
+                <% @movie_cast.first(5).each do |cast| %>
+                    <tr>
+                        <td>
+                        <%= image_tag("#{@configuration.base_url}w300#{cast['profile_path']}") if cast['profile_path'] %>
+                        <% unless cast['profile_path'] %><img src="http://placehold.it/154x154"><% end %>
+                        </td>
+                        <td>
+                        <%= cast['name'] %> as <%= cast['character'] %><br />
+                        </td>
+                    </tr>
+                <% end %>
+                </table>
+              </td></tr>
+                </div>
+            <tbody>
+            <tr>
+              <td class="hidden-phone"><%= raw @mms_result %></td>
+              <td class="hidden-phone"><%= raw @fedora_result %></td>
+              <td class="hidden-phone"><%= raw @api_result %></td>
+              <td class="hidden-phone"><%= raw @dc_result %></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
